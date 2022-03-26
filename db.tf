@@ -40,8 +40,8 @@ resource "azurerm_linux_virtual_machine" "DB-VM" {
   resource_group_name             = azurerm_resource_group.DB.name
   location                        = azurerm_resource_group.DB.location
   size                            = "Standard_b1ls"
-  admin_username                  = "adminuser"
-  admin_password                  = "P@ssw0rd1234!"
+  admin_username                  = 
+  admin_password                  = "
   disable_password_authentication = false
   network_interface_ids           = [azurerm_network_interface.DB.id]
 
