@@ -120,8 +120,8 @@ resource "azurerm_linux_virtual_machine" "webApp" {
   resource_group_name             = azurerm_resource_group.webApp.name
   location                        = azurerm_resource_group.webApp.location
   size                            = "Standard_b1ls"
-  admin_username                  = "adminuser"
-  admin_password                  = "P@ssw0rd1234!"
+  admin_username                  = 
+  admin_password                  = 
   availability_set_id             = azurerm_availability_set.avset.id
   disable_password_authentication = false
   network_interface_ids = [
